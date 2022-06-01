@@ -14,11 +14,22 @@ body {
 
 main .puntos span {
   background-color: #fff;
-  width: 10px;
-  height: 10px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
   position: absolute;
-  transform: rotate(calc(var(--i) * 36deg)) translate(35px);
+  transform: rotate(calc(var(--i) * 24deg)) translate(70px);
+  animation: opacidad_animada 1.5s linear infinite;
+  opacity: 0;
+  animation-delay: calc(var(--i) * 0.1s);
+}
+@keyframes opacidad_animada {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
