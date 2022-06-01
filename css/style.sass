@@ -4,27 +4,27 @@
     box-sizing: border-box
 
 body
-    background-color: #292929
+    //background-color: #292929
+    background: linear-gradient(45deg, #D36135, #E6AA68)
     display: flex
     justify-content: center
     align-items: center
     min-height: 100vh
 
 
-main
-    .puntos
-        span
-            background-color: #fff
-            width: 20px
-            height: 20px
-            border-radius: 50%
-            position: absolute
-            transform: rotate(calc( var(--i) * (360deg/15))) translate(70px) // 15 son la cantidad de span --i:numero
-            animation: opacidad_animada 1.5s linear infinite
-            opacity: 0 //Los ocultamos para mostrarlos con la animación
-            animation-delay: calc( var(--i) *  0.1s )
-            @keyframes opacidad_animada
-                0%,100%
-                    opacity: 1
-                50%
-                    opacity: 0
+.contenedor-puntos
+    span
+        background-color: #fff
+        width: 20px
+        height: 20px
+        border-radius: 50%
+        position: absolute
+        transform: rotate(calc( var(--i) * (360deg/15))) translate(70px) // 15 son la cantidad de span --i:numero
+        animation: opacidad_animada 1.5s linear infinite
+        opacity: 0 //Los ocultamos para mostrarlos con la animación
+        animation-delay: calc( var(--i) *  0.1s )
+        @keyframes opacidad_animada
+            0%,100%
+                opacity: 1
+            50%
+                opacity: 0
